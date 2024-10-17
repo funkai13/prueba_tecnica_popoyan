@@ -1,13 +1,14 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:prueba_tecnica_popoyan/core/utils/constanst.dart';
 import 'package:prueba_tecnica_popoyan/feature/characters/domain/entity/character_entity.dart';
 import 'package:prueba_tecnica_popoyan/feature/characters/domain/repositories/character_repository.dart';
 
 import '../models/character_model.dart';
 
 class CharacterApi implements CharacterRepository {
-  static String apiUrl = 'https://rickandmortyapi.com/api/character';
+  final String apiUrl = ApiConfig.apiUrl;
 
   @override
   Future<List<CharacterEntity>> getCharacters() async {
