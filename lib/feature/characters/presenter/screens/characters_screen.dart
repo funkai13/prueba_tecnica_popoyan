@@ -15,12 +15,12 @@ class CharacterScreen extends StatelessWidget {
         ),
         body: LayoutBuilder(builder: (context, constraints) {
           if (constraints.maxWidth < Breakpoints.mobile) {
-            return Padding(
+            return const Padding(
               padding: EdgeInsets.all(12),
               child: CharactersList(),
             );
           } else {
-            return Padding(
+            return const Padding(
               padding: EdgeInsets.all(12),
               child: CharactersGrid(),
             );
