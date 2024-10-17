@@ -24,23 +24,25 @@ class CharacterDetailsScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: Center(
-        child: Column(
-          children: [
-            SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _buildCharacterImage(),
-                    const SizedBox(height: 24),
-                    CharacterDetailsCard(character: character),
-                  ],
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildCharacterImage(),
+                      const SizedBox(height: 24),
+                      CharacterDetailsCard(character: character),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
