@@ -3,30 +3,31 @@ import 'package:flutter/cupertino.dart';
 class GenericGrid<T> extends StatelessWidget {
   final List<T> items;
   final Widget Function(T item) itemBuilder;
-  final int crossAxisCount;
+  final double maxCrossAxisExtent;
   final double crossAxisSpacing;
   final double mainAxisSpacing;
-  final double childAspectRatio;
+  final double mainAxisExtent;
 
   const GenericGrid({
     super.key,
     required this.items,
     required this.itemBuilder,
-    required this.crossAxisCount,
+    required this.maxCrossAxisExtent,
     required this.crossAxisSpacing,
     required this.mainAxisSpacing,
-    required this.childAspectRatio,
+    required this.mainAxisExtent,
   });
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: crossAxisCount,
+        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: maxCrossAxisExtent,
+          mainAxisExtent: mainAxisExtent,
           crossAxisSpacing: crossAxisSpacing,
-          mainAxisExtent: mainAxisSpacing,
-          childAspectRatio: childAspectRatio,
+          mainAxisSpacing: mainAxisSpacing,
         ),
+        itemCount: items.length,
         itemBuilder: (context, index) {
           final item = items[index];
           return itemBuilder(item);
