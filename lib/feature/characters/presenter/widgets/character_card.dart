@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prueba_tecnica_popoyan/feature/characters/domain/entity/character_entity.dart';
-import 'package:prueba_tecnica_popoyan/feature/characters/presenter/screens/characters_details.dart';
+import 'package:prueba_tecnica_popoyan/feature/characters/presenter/screens/characters_details_screen.dart';
 
 class CharacterCard extends StatelessWidget {
   final CharacterEntity character;
