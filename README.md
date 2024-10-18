@@ -13,10 +13,7 @@
 4. [Instalación y Ejecución](#instalación-y-ejecución)  
 5. [Uso de la App](#uso-de-la-app)  
 6. [Tecnologías Utilizadas](#tecnologías-utilizadas)  
-7. [Modo Claro y Oscuro](#modo-claro-y-oscuro)  
-8. [Contribución](#contribución)  
-9. [Licencia](#licencia)  
-10. [Contacto](#contacto)  
+
 
 ---
 
@@ -47,4 +44,55 @@ Se implementó  **Clean Architecture** a pesar del tamaño reducido del proyecto
 
 ---
 
+## **Instalación y Ejecución**
+1. **Clona el repositorio**
+```bash
+git clone https://github.com/funkai13/prueba_tecnica_popoyan.git
+```
+2. **Instala las Dependencias**
+   ```bash
+   flutter pub get
+   ```
+3. **Ejecuta la App**
+   ```bash
+   flutter run
+   ```
+## **Uso de la App**
+1. Al abrir la app, verás una lista completa de personajes de Rick and Morty.
+<div align="center">
+  <img src="https://i.ibb.co/YtYV37t/Screenshot-20241018-105248.png" alt="pagina inicial" height="500"/>
+</div>
 
+3. Toca un personaje para ver más detalles.
+<div align="center">
+  <img src="https://i.ibb.co/gMZzh5v/details-page.png" alt="pagina de detalles" height="500"/>
+</div>
+5. Prueba la app en modo claro y oscuro para ver el cambio automático de tema.
+  <div>
+  <img src="https://i.ibb.co/1Lg8zFb/initial-page-white.png" alt="pagina inicial claro" height="500"/>
+  <img src="https://i.ibb.co/gZ7Xf6g/details-page-white.png" alt="pagina detalles claro" height="500"/>
+  <img src="https://i.ibb.co/YtYV37t/Screenshot-20241018-105248.png" alt="pagina inicial oscuro" height="500"/>
+  <img src="https://i.ibb.co/gMZzh5v/details-page.png" alt="pagina de detalles oscuro" height="500"/>
+  </div>
+
+6. La interfaz se adapta automáticamente entre móvil y tableta.
+
+   6.1 Vistas de tableta Vertical
+     <div>
+       <img src="https://i.ibb.co/xzRQHkG/initial-page-tablet.png" alt="pagina inicial tablet" height="500"/>
+       <img src="https://i.ibb.co/dfzsQZ2/details-page-tablet.png" alt="pagina detalles tablet" height="500"/>
+     </div>
+
+     6.2 Vistas de tableta Horizontal
+     <div>
+       <img src="https://i.ibb.co/JyyCG8F/initial-page-lanscape-tablet.png" alt="pagina inicial tablet horizontal" height="500"/>
+       <img src="https://i.ibb.co/31LJqVV/details-page-landscape-tablet.png" alt="pagina detalles tablet horizontal" height="500"/>
+     </div>
+
+## **Tecnologías Utilizadas**
+- Flutter para la interfaz de usuario.
+- Dart como lenguaje principal.
+- Rick and Morty API para la obtención de datos.
+- Riverpod para la gestión de estados.
+- Clean Architecture para la estructura del código.
+- GitHub para control de versiones.
