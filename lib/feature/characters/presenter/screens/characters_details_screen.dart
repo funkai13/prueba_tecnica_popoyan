@@ -34,7 +34,7 @@ class CharacterDetailsScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _buildCharacterImage(),
+                      characterImage(),
                       const SizedBox(height: 24),
                       CharacterDetailsCard(character: character),
                     ],
@@ -48,7 +48,7 @@ class CharacterDetailsScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildCharacterImage() {
+  Widget characterImage() {
     return Center(
       child: Hero(
         tag: 'character-image-${character.name}',
