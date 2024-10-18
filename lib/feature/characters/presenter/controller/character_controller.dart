@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../../core/services/dialog_service.dart';
+import '../../../../core/widgets/generic_dialog.dart';
 import '../../domain/entity/character_entity.dart';
 import '../../domain/provider/character_provider.dart';
 
